@@ -5,6 +5,10 @@ table, td, th {
     text-align: center;
 }
 
+textarea {
+    resize: none;
+}
+
 #exo td {
     padding-inline: 2em;
     border: solid 2.5px black;
