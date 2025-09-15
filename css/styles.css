@@ -1,4 +1,4 @@
-h1 {
+.titre_base {
     /* Color: La couleur du text */
     color: rgb(0, 114, 213);
     /* Text-align: alignement du texte */
@@ -8,6 +8,11 @@ h1 {
     /* Padding: marge intérieure */
     padding: 1em;
     /* Text-decoration: ligne de décoration */
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -56,6 +61,9 @@ textarea {
     border: solid 2.5px black;
 }
 
+
+/* TETRIS */
+
 #exo-2 {
     border: none;
 }
@@ -81,9 +89,30 @@ textarea {
 }
 
 .green {
-    background-color: greenyellow;
+    background-color: green;
 }
 
 .orange {
     background-color: orange;
+}
+
+/* 
+ _______  _______           _______  _______    _______  _______  _______ 
+(  ____ \(  ___  )|\     /|(  ____ )(  ____ \  (  ____ \(  ____ \(  ____ \
+| (    \/| (   ) || )   ( || (    )|| (    \/  | (    \/| (    \/| (    \/
+| |      | |   | || |   | || (____)|| (_____   | |      | (_____ | (_____ 
+| |      | |   | || |   | ||     __)(_____  )  | |      (_____  )(_____  )
+| |      | |   | || |   | || (\ (         ) |  | |            ) |      ) |
+| (____/\| (___) || (___) || ) \ \__/\____) |  | (____/\/\____) |/\____) |
+(_______/(_______)(_______)|/   \__/\_______)  (_______/\_______)\_______)
+                                                                           
+*/
+
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+.circle {
+
 }
