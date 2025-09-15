@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta description est le petit texte descriptif en dessous du lien dans la recherche du moteur de recherche -->
+    <meta name="description" content="Mon premier site, et je me calme">
+    <!-- Meta keywords est ignoré à cause d'abus -->
+    <meta name="keywords" content="jambon viande saucisse">
+    <!-- width=device-width -> le site d'adapte automatiquement à l'écran du périphérique, initial-scale=1.0 -> zoom de 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VotreFormateurFavori">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Jambon</title>
+</head>
+<body>
+    <!-- Le titre d'un site -->
+    <h1>Pas le titre de mon premier site</h1>
+
+    <p>Pas mon premier paragraphe</p>
+    <p><b>Mon texte est en gras</b></p>
+    <!-- La balise strong est obsolète -->
+    <p><strong>Mon texte est encore gras</strong></p>
+
+    <!-- La balise <i> est réservée pour les icônes -->
+    <p><i>Mon texte en italique</i></p>
+    <p><em>Mon texte encore en italique</em></p>
+
+    <br><br><br><br><br><br>
+    <p>Gros passage à la ligne</p>
+    <p><del>Texte barré</del></p>
+    <p><u>Texte souligné</u></p>
+
+    <hr>
+    <h2>Les listes</h2>
+
+    <h3>Listes ordonnées</h3>
+    <ol>
+        <li>Jambon</li>
+        <li>Merguez</li>
+        <li>Chipo</li>
+        <li>Jesu</li>
+        <li>Autruche</li>
+    </ol>
+
+    <h3>Listes à puces</h3>
+    <ul>
+        <li>Saab</li>
+        <li>Dacia</li>
+        <li>Lada</li>
+        <li>Multipla</li>
+        <li>C3 pluriel</li>
+    </ul>
+
+    <hr>
+    <h2>La balise image</h2>
+    <img src="https://images-ext-1.discordapp.net/external/Bc3el0oKxr-UbhbhG1YDvxP-udM1w27ppob7Y7qkLbU/https/image.jimcdn.com/app/cms/image/transf/dimension%3D402x10000%3Aformat%3Dgif/path/s5dde8bff85c81b2f/image/i20e9b588f957c774/version/1451330273/animal-3d-autruche.gif" alt="Gif d'une autruche">
+    <br>
+    <img width="100px" src="https://images-ext-1.discordapp.net/external/Bc3el0oKxr-UbhbhG1YDvxP-udM1w27ppob7Y7qkLbU/https/image.jimcdn.com/app/cms/image/transf/dimension%3D402x10000%3Aformat%3Dgif/path/s5dde8bff85c81b2f/image/i20e9b588f957c774/version/1451330273/animal-3d-autruche.gif" alt="Gif d'une autruche plus petit">
+    <hr>
+    <h2>Les tableaux</h2>
+
+    <table>
+        <!-- La balise suivante est optionnelle -->
+         <thead>
+            <!-- <tr> alias table row déclare une ligne dans le tableau -->
+            <tr>
+                <!-- <th> alias table head déclare une colonne dans l'entête du tableau -->
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Pays</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- 1ère ligne du tableau -->
+            <tr>
+                <td>Carmen</td>
+                <td>33 ans</td>
+                <td>Espagne</td>
+            </tr>
+            <!-- 2ème ligne du tableau -->
+            <tr>
+                <td>Michelle</td>
+                <td>26 ans</td>
+                <td>USA</td>
+            </tr>
+            <!-- 3ème ligne du tableau -->
+             <tr>
+                <td>François</td>
+                <td>43 ans</td>
+                <td>France</td>
+             </tr>
+         </tbody>
+         <!-- Optionnel aussi -->
+         <tfoot>
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Pays</th>
+            </tr>
+         </tfoot>
+    </table>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom de l'élève</th>
+                <th>Matière</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">David</td>
+                <td>Maths</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Physique</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Informatique</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Alex</td>
+                <td>Maths</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Physique</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Informatique</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table>
+        <thead>
+            <th colspan="3">Bingo de la Muerte</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>William Shatner 93 ans</td>
+                <td>Line Renaud 96 ans</td>
+                <td>Phillippe Bouvard 94 ans</td>
+            </tr>
+            <tr>
+                <td>Bernadette Chirac 91 ans</td>
+                <td>Renaud Séchan 73 ans</td>
+                <td>Clint Eastwood 94 ans</td>
+                <td>Yoko Ono 91 ans</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+        <caption>Une table test avec des cellules fusionnées (animaux)</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Moyenne</th>
+                <th rowspan="2">Yeux bleus</th>
+            </tr>
+            <tr>
+                <th>hauteur</th>
+                <th>poids</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Chiens</th>
+                <td>0.6</td>
+                <td>12</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <th>Chats</th>
+                <td>0.3</td>
+                <td>4</td>
+                <td>40%</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!-- 6 colonnes, 10 lignes -->
+    <table id="exo">
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2</td>
+                <td rowspan="2">3</td>
+                <td rowspan="2" colspan="2">4</td>
+            </tr>
+            <tr>
+                <td colspan="3">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td colspan="2">9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td colspan="2">11</td>
+                <td colspan="3">12</td>
+                <td rowspan="7">13</td>
+            </tr>
+            <tr>
+                <td rowspan="3">14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td colspan="4">19</td>
+            </tr>
+            <tr>
+                <td colspan="2">20</td>
+                <td colspan="2">21</td>
+            </tr>
+            <tr>
+                <td colspan="5">22</td>
+            </tr>
+            <tr>
+                <td rowspan="2">23</td>
+                <td colspan="2">24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td colspan="2">28</td>
+                <td>29</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!-- 7 colonnes, 12 lignes -->
+    <table id="exo-2">
+        <tbody>
+            <tr>
+                <td rowspan="4" class="blue"></td>
+                <td rowspan="3" class="aqua"></td>
+                <td class="aqua"></td>
+                <td colspan="4" class="yellow"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="blue"></td>
+                <td class="blue"></td>
+                <td colspan="2" class="purple"></td>
+                <td rowspan="3" class="green"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="purple"></td>
+                <td class="green"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="green"></td>
+                <td colspan="2" class="yellow"></td>
+                <td rowspan="2" class="orange"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="green"></td>
+                <td rowspan="2" class="purple"></td>
+                <td colspan="2" class="yellow"></td>
+                <td rowspan="2" class="orange"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="blue"></td>
+                <td colspan="2" class="purple"></td>
+                <td rowspan="2" class="aqua"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="blue"></td>
+                <td rowspan="2" class="yellow"></td>
+                <td colspan="2" class="aqua"></td>
+                <td rowspan="4" class="blue"></td>
+            </tr>
+            <tr>
+                <td class="yellow"></td>
+                <td class="yellow"></td>
+                <td rowspan="2" class="purple"></td>
+                <td rowspan="2" class="purple"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="green"></td>
+                <td class="green"></td>
+                <td colspan="2" class="aqua"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="aqua"></td>
+                <td colspan="3" class="yellow"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="orange"></td>
+                <td colspan="2" class="blue"></td>
+                <td class="yellow"></td>
+                <td colspan="2" class="orange"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="orange"></td>
+                <td colspan="2" class="blue"></td>
+                <td colspan="2" class="orange"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Les formulaires</h2>
+    <!-- Input text -->
+     <label for="texte">Un input text</label><br>
+     <input type="text" name="texte" id="" placeholder="Un input text">
+     <br>
+    <!-- Input password -->
+     <label for="psw">Un input password</label><br>
+     <input type="password" name="psw" id="" maxlength="3">
+     <br>
+    <!-- Input color -->
+     <label for="color">Une couleur</label><br>
+     <input type="color" name="color" id="">
+     <br>
+    <!-- Input date -->
+     <label for="date">Une date</label><br>
+     <input type="date" name="date" id="">
+     <br>
+    <!-- Input datetime -->
+     <label for="datetime">Date et heure</label><br>
+     <input type="datetime-local" name="datetime" id="">
+     <br>
+    <!-- Input time -->
+     <label for="time">L'heure</label><br>
+     <input type="time" name="time" id="" min="09:00" max="19:00">
+     <br>
+    <!-- Input range -->
+     <label for="range">slider</label><br>
+     <input type="range" name="range" id="" min="0" max="10" step="1">
+     <br>
+     <!-- Textarea -->
+      <label for="Textarea">Zone de texte</label><br>
+      <textarea name="Textarea" id="" cols="50" rows="6"></textarea>
+      <br>
+      <!-- Le select -->
+       <label for="select">Un select</label><br>
+       <select name="" id="">  
+            <optindex.htmlion value="">Népal</option>
+            <option value="">USA</option>
+            <option value="">Lux</option>
+            <option value="" selected>France</option>
+            <option value="">Italie</option>
+       </select>
+       <br>
+       <!-- Checkbox -->
+    <input type="checkbox" name="hobbies" id="">
+    <label for="lecture">Lecture</label>
+    <input type="checkbox" name="hobbies" id="">
+    <label for="lecture">Musique</label>
+    <input type="checkbox" name="hobbies" id="">
+    <label for="lecture">Voyage</label>
+    <br>
+       <!-- Radios -->
+    <input type="radio" name="genre" id="">
+    <label for="genre">Femme</label>
+    <input type="radio" name="genre" id="">
+    <label for="genre">Homme</label>
+    <input type="radio" name="genre" id="">
+    <label for="genre">Non-binaire</label>
+    <p>Test</p>
+</body>
+</html>
