@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url(/fonts/Sansation/Sansation-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Imperial';
+    src: url(/fonts/Imperial_Script/ImperialScript-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: 'Sansation', sans-serif;
+    min-height: 100vh;
+}
+
 .titre_base {
     /* Color: La couleur du text */
     color: rgb(0, 114, 213);
@@ -132,9 +147,6 @@ textarea {
     display: inline-block;
 }
 
-body {
-    min-height: 100vh;
-}
 
 .nav-bar {
     background-color: darkslateblue;
@@ -177,3 +189,88 @@ h5 ~ p {
     font-weight: bold;
     color: orange;
 }
+
+.text-chiant {
+    font-family: 'Imperial';
+    font-size: 2rem;
+
+}
+
+/* Les pseudos éléments */
+
+
+.text-chiant::first-letter {
+    color: red;
+    font-weight: bold;
+    font-size: 10rem;
+    float: left;
+}
+
+#super-button {
+    border: 1px solid #316a93;
+    background-color: #337CA0;
+    padding: 5px;
+    border-radius: 7.5px;
+    color: white;
+    text-decoration: none;
+}
+
+#super-button:hover {
+    border: 1px solid #316a93ad;
+    background-color: #337CA0ad;
+}
+
+#super-button::after {
+    /* TOUJOURS METTRE CONTENT */
+    content: ' ❤';
+    color: red;
+}
+
+#super-button:hover::after {
+    content: "👍";
+    scale: 1.3;
+    display: inline-block;
+}
+
+:root {
+    --rouge: red;
+    --vert: green;
+    --bleu: blue;
+    --violet: purple;
+}
+
+.box p {
+    color: var(--rouge);
+}
+
+.container p + span {
+    color: var(--vert);
+}
+
+.container p ~ span {
+    color: var(--bleu);
+}
+
+.container > p {
+    color: var(--violet);
+}
+
+.container .box h2 {
+    color: orange;
+}
+
+
+.box h2::before {
+    content: '→ ';
+}
+
+.box p::after {
+    content: ' —';
+    font-style: italic;
+}
+
+.container > p::after {
+    content: " (important)";
+    font-size: .5rem;
+}
+
