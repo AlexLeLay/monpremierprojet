@@ -114,5 +114,66 @@ textarea {
 }
 
 .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
+.text-color-red {
+    color: red;
+}
+/* Si on met une div en inline, sachant que l'inline ne gère pas les dimensions, on ne la verra pas. L'inline est utilisé principalement pour du texte */
+.cobaye {
+    display: inline;
+}
+
+/* L'inline-block autorise les dimensions, permet aussi d'accumuler les éléments sur la longueur et de passer à la ligne quand l'élément n'a plus de place */
+.cobaye2 {
+    display: inline-block;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.nav-bar {
+    background-color: darkslateblue;
+    width: 100%;
+    height: 10vh;
+    /* Permet au texte à l'intérieur de la div d'être centré verticalement, mettre la même hauteur que la hauteur de la div */
+    line-height: 10vh;
+}
+
+.nav-bar-list > li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 7.5px;
+}
+
+.nav-bar-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar-list > li > a:hover {
+    color: orange;
+}
+
+.parent > p {
+    color: green;
+}
+
+.all-children-parent p {
+    color: red;
+}
+
+h4 + p {
+    /* Attention le h4 est en gras par défaut */
+    font-weight: bold;
+    color: blue;
+}
+
+h5 ~ p {
+    font-weight: bold;
+    color: orange;
 }
