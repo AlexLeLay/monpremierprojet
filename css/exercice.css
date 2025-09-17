@@ -1,0 +1,79 @@
+/* Les variables */
+:root {
+    /* Une variable permet de sauvegarder/nommer une couleur, une taille */
+    --yellow-color: #EAEF39;
+    --orange-color: #F67C41;
+    --cyan-color: #25EFBA;
+    --square-size: 30px;
+}
+
+/* Couleurs */
+.red { background-color: #e74c3c; }
+.blue { background-color: #3498db; }
+.green { background-color: #2ecc71; }
+.orange { background-color: #f39c12; }
+.purple { background-color: #9b59b6; }
+.teal { background-color: #1abc9c; }
+.pink { background-color: #ff6b81; }
+.violet { background-color: #8e44ad; }
+.grey { background-color: #7f8c8d; }
+
+
+.items::before {
+    counter-increment: section;
+    content: counter(section);
+}
+
+.container {
+    counter-reset: section;
+    display: flex;
+    border: 1px dashed grey;
+    width: 50vw;
+    height: 10vh;
+    padding: 1rem;
+    gap: .25rem;
+    margin-block: 1rem;
+}
+
+.center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items {
+    align-items: start;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.items {
+    height: var(--square-size);
+    aspect-ratio: 1/1;
+    border-radius: .25rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 30px;
+}
+
+.column {
+    flex-direction: column;
+    height: 20vh;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}

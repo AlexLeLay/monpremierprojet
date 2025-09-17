@@ -112,14 +112,13 @@ textarea {
 }
 
 /* 
- _______  _______           _______  _______    _______  _______  _______ 
-(  ____ \(  ___  )|\     /|(  ____ )(  ____ \  (  ____ \(  ____ \(  ____ \
-| (    \/| (   ) || )   ( || (    )|| (    \/  | (    \/| (    \/| (    \/
-| |      | |   | || |   | || (____)|| (_____   | |      | (_____ | (_____ 
-| |      | |   | || |   | ||     __)(_____  )  | |      (_____  )(_____  )
-| |      | |   | || |   | || (\ (         ) |  | |            ) |      ) |
-| (____/\| (___) || (___) || ) \ \__/\____) |  | (____/\/\____) |/\____) |
-(_______/(_______)(_______)|/   \__/\_______)  (_______/\_______)\_______)
+  ░██████    ░██████   ░██     ░██ ░█████████    ░██████        ░██████    ░██████     ░██████   
+ ░██   ░██  ░██   ░██  ░██     ░██ ░██     ░██  ░██   ░██      ░██   ░██  ░██   ░██   ░██   ░██  
+░██        ░██     ░██ ░██     ░██ ░██     ░██ ░██            ░██        ░██         ░██         
+░██        ░██     ░██ ░██     ░██ ░█████████   ░████████     ░██         ░████████   ░████████  
+░██        ░██     ░██ ░██     ░██ ░██   ░██           ░██    ░██                ░██         ░██ 
+ ░██   ░██  ░██   ░██   ░██   ░██  ░██    ░██   ░██   ░██      ░██   ░██  ░██   ░██   ░██   ░██  
+  ░██████    ░██████     ░██████   ░██     ░██   ░██████        ░██████    ░██████     ░██████   
                                                                            
 */
 
@@ -274,3 +273,75 @@ h5 ~ p {
     font-size: .5rem;
 }
 
+/* 
+░██████████░██         ░██████████ ░██    ░██ 
+░██        ░██         ░██          ░██  ░██  
+░██        ░██         ░██           ░██░██   
+░█████████ ░██         ░█████████     ░███    
+░██        ░██         ░██           ░██░██   
+░██        ░██         ░██          ░██  ░██  
+░██        ░██████████ ░██████████ ░██    ░██ 
+*/
+
+
+.container-flex {
+    /* C'est toujours le conteneur des éléments qui a le display:flex */
+    /* Par défaut les éléments dans le conteneur seront alignés horizontalement */
+    display: flex;
+    background-color: aquamarine;
+    height: 30vh;
+}
+
+.box-flex {
+    height: 20%;
+    /* Pour éviter de calculer la largeur, on utilise une mise à l'échelle */
+    /* width: calc(30vh * 0.2); */
+    aspect-ratio: 1/1;
+    background-color: chocolate;
+}
+
+.box-flex-col {
+    width: 6vh;
+    aspect-ratio: 1/1;
+    background-color: crimson;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
