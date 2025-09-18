@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exercice_2.css">
+    <title>Exercice flex 2</title>
+</head>
+<body>
+    <main class="flex">
+        <div class="flex">
+            <div class="logo flex center"><p>.logo</p></div>
+            <div class="nav-bar flex wrap">
+                <p>.NAV (EN WRAP)</p>
+                <ul class="flex wrap">
+                    <li class="nav-item"><a href="#">Accueil</a></li>
+                    <li class="nav-item"><a href="#">Projets</a></li>
+                    <li class="nav-item"><a href="#">Stats</a></li>
+                    <li class="nav-item"><a href="#">Tâches</a></li>
+                    <li class="nav-item"><a href="#">Équipe</a></li>
+                    <li class="nav-item"><a href="#">Docs</a></li>
+                    <li class="nav-item"><a href="#">Paramètres</a></li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <ul class="flex search-bar-list">
+                    <li><input type="search" name="" id="" placeholder="Recherche..."></li>
+                    <li><a href="#">Nouveau</a></li>
+                    <li><a href="#">Exporter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex">
+            <div id="left">
+                <ul class="left-nav flex">
+                    <li class="left-nav-item"><a href="#">.menu-top</a></li>
+                    <li class="left-nav-item"><a href="#">Dashboard</a></li>
+                    <li class="left-nav-item"><a href="#">Activité</a></li>
+                    <li class="left-nav-item"><a href="#">Kanban</a></li>
+                    <li class="left-nav-item"><a href="#">Reporting</a></li>
+                    <li class="left-nav-item"><a href="#">Paramètres</a></li>
+                </ul>
+            </div>
+            <div id="middle">
+                <div class="middle-first-row flex">
+                    <div>Header</div>
+                    <div class="stats flex">
+                        <div class="stat flex center">Stat A</div>
+                        <div class="stat flex center">Stat B</div>
+                        <div class="stat flex center">Stat C</div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="right" class="flex">
+                <div class="flex">
+                    <div class="flex">
+                        <div class="carre"></div>
+                        <div class="infos">
+                            <p>PROFIL</p>
+                            <p>Nom</p>
+                            <p>Prénom</p>
+                        </div>
+                    </div>
+                    <div><a href="#">Suivre</a></div>
+                </div>
+                <div class="flex">
+                    <div>Widget 1</div>
+                    <div>Widget 2</div>
+                    <div>Widget 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer flex">
+            <p>Votre Formateur Adoré &#169; 2025 -- En Flex Uniqument (N'est-ce pas Alexandre)</p>
+            <p>Fabriqué avec des <span class="highlight">div</span></p>
+        </div>
+    </main>
+</body>
+</html>
