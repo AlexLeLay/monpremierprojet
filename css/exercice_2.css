@@ -1,6 +1,6 @@
 :root {
     --gap: .75rem;
-    --body-margin: 1rem;
+    /* --body-margin: 1rem; */
 }
 
 * {
@@ -135,7 +135,7 @@ input {
 }
 
 .search-bar-list {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .search-bar-list > li:first-of-type {
@@ -151,7 +151,8 @@ input {
 
 .search-bar-list li {
     width: calc(33% - var(--gap) - .75rem);
-    background-color: orange;
+    /* background-color: #FCAE78; */
+    background: hsla(0, 0%, 100%, 0.5);
     padding: .75rem;
 }
 
@@ -323,7 +324,7 @@ input {
 
 .size-l {
     background: blue;
-    height: 29%;
+    height: 35%;
 }
 
 .small-width {
@@ -342,7 +343,7 @@ input {
     justify-content: center;
     align-items: center;
     background-color: #06B6D4;
-    width: calc(25% - var(--gap));
+    width: calc(25% - 0.6rem);
 }
 
 .number::before {

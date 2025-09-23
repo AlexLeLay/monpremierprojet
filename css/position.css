@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Vibes";
+    src: url("/fonts/Great_Vibes/GreatVibes-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5vh;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3, h4 {
+    text-decoration: underline;
+}
+
+
+p {
+    margin-left: 2rem;
+    margin-bottom: .25rem;
+}
+
+.static {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: static;
+}
+
+.relative {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: relative;
+    bottom: 2rem;
+    left: 3rem;
+    z-index: -1;
+}
+
+.absolute-orphan {
+    height: 50px;
+    width: 50px;
+    background: green;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.container-relative > img {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translateX(-40%);
+}
+
+.flex-overflow {
+    display: flex;
+    justify-content: center;
+}
+
+.overflow {
+    overflow: hidden;
+    border-radius: 1rem;
+    width: 20%;
+    aspect-ratio: 1/1.5;
+    position: relative;
+}
+
+.title-product {
+    position: absolute;
+    font-family: "Vibes";
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+    margin: 0;
+    top: 10%;
+    left: 50%;
+    translate: -50% -50%;
+    text-wrap: nowrap;
+    background-color: rgba(250, 235, 215, 0.5);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.title-product p {
+    margin: 0;
+}
+
+.fixed-element {
+    background-color: rgb(0, 128, 128, 0.75);
+    height: 5vh;
+    width: 100%;
+    color: white;
+    position: fixed;
+    /* Toujours mettre un top/bottom même si égal à 0 */
+    top: 0;
+}
+
+.sticky {
+    position: sticky;
+    height: 20vh;
+    width: 10%;
+    background: yellow;
+    top: 0;
+    z-index: 12;
+}
