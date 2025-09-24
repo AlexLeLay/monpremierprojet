@@ -111,6 +111,10 @@ textarea {
     background-color: orange;
 }
 
+.red {
+    background-color: red;
+}
+
 /* 
   ░██████    ░██████   ░██     ░██ ░█████████    ░██████        ░██████    ░██████     ░██████   
  ░██   ░██  ░██   ░██  ░██     ░██ ░██     ░██  ░██   ░██      ░██   ░██  ░██   ░██   ░██   ░██  
@@ -283,6 +287,38 @@ h5 ~ p {
 ░██        ░██████████ ░██████████ ░██    ░██ 
 */
 
+
+.flex {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.flex > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex p {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.flex1 {
+    /* Pour faire un flex grow, le plus rapide est d'utiliser flex: valeur */
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
 
 .container-flex {
     /* C'est toujours le conteneur des éléments qui a le display:flex */
