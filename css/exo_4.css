@@ -4,6 +4,7 @@
       --accent: #795548;
       --text: #333;
       font-family: 'Segoe UI', sans-serif;
+      --nav-height:50px;
 }
 
 * {
@@ -18,10 +19,34 @@ body {
     color: var(--text);
 }
 
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
 nav {
     padding: 1.5rem 1.75rem;
     background: white;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+    z-index: 10;
+    position: fixed;
+    width: calc(100% - 3.5rem);
+    height: var(--nav-height);
 }
 
 nav > ul {
@@ -56,10 +81,13 @@ a {
     height: 300px;
     background: linear-gradient(to right, #FFF3CD, #FFE0B2);
     display: flex;
+    position: relative;
+    top: var(--nav-height);
 }
 
 #hero h2 {
     font-size: 3.5rem;
+    text-align: center;
 }
 
 #hero > div {
@@ -72,22 +100,85 @@ a {
     padding: 1rem 1.5rem;
 }
 
-.flex {
+#pic {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    width: fit-content;
+    border: 5px solid white;
+    position: absolute;
+    bottom: -4rem;
+    right: 5rem;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+#pic img {
+    width: 150px;;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+#gallery {
+    padding: 3rem;
     display: flex;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.justify-content-center {
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 2rem;
     justify-content: center;
 }
 
-.space-between {
-    justify-content: space-between;
+.card {
+    width: calc((100% / 4) - 2rem);
+    height: 300px;
+    background: white;
+    border-radius: 1rem;
+
 }
 
-.column {
-    flex-direction: column;
+.pic-container {
+    flex: 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.pic-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.infos {
+    flex: 1;
+    padding: 1rem;
+}
+
+.cta {
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+footer {
+    padding: 1rem;
+    background: var(--accent);
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    width: 300px;
+}
+
+footer a {
+    color: white;
+    text-wrap: nowrap;
+}
+
+.cta:hover, #hero-cta:hover {
+    background-color: #468005;
+    cursor: pointer;
 }

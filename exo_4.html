@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <nav class="flex space-between">
+        <nav class="flex align-items-center space-between">
             <h1>Les Autruchiens</h1>
             <ul class="flex align-items-center justify-content-center space-between">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Galerie</a></li>
+                <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -21,59 +21,71 @@
                 <h2>Bienvenue dans le monde fabuleux des autruches</h2>
                 <button id="hero-cta">En savoir plus</button>
             </div>
+            <div id="pic">
+                <img src="img/kempere.jpg" alt="Tête de cul">
+            </div>
         </div>
     </header>
     <main>
-        <div class="round">
-            <img src="img/kempere.jpg" alt="Tête de cul">
-        </div>
         <div id="gallery">
-            <div class="card">
-                <img src="img/Autruche.png" alt="Une autruche dans la nature">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/Autruche.png" alt="Une autruche dans la nature">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Autruche d'Afrique</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/exo_4/Autruche.png" alt="Une autruche sur un vélo">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/exo_4/Autruche.png" alt="Une autruche sur un vélo">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Autruche rapide</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/exo_4/desert.png" alt="Une autruche dans un désert">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/exo_4/desert.png" alt="Une autruche dans un désert">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Reine du désert</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/exo_4/exploratrice.png" alt="Une autruche exploratrice">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/exo_4/exploratrice.png" alt="Une autruche exploratrice">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Exploratrice</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/exo_4/or.png" alt="Une autruche dorée">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/exo_4/or.png" alt="Une autruche dorée">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Plume d'or</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="img/exo_4/curieuse.png" alt="Une autruche curieuse">
-                <div>
+            <div class="card flex column">
+                <div class="pic-container">
+                    <img src="img/exo_4/curieuse.png" alt="Une autruche curieuse">
+                </div>
+                <div class="infos flex column space-between">
                     <h3>Autruche curieuse</h3>
                     <button class="cta">Voir plus</button>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <ul class="flex align-items-center">
+    <footer class="flex space-between">
+        <ul class="flex align-items-center space-between">
             <li><a href="#">Mentions Légales</a></li>
             <li><a href="#">Politique</a></li>
             <li><a href="#">Aide</a></li>
