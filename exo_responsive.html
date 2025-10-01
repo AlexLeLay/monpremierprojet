@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exo_responsive.css">
+    <title>Exo responsive</title>
+</head>
+<body>
+    <header class="flex space-between align-items-center">
+        <h1>Les Autruches fantômes</h1>
+        <nav class="flex align-items-center">
+            <ul class="desktop-menu flex space-between">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <button>☰</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="flex align-items-center">
+            <div class="hero-content flex column">
+                <h2 class="upper">sos autruche buster</h2>
+                <p>Un film avec <span class="upper">bill murray</span> !!</p>
+                <button>En savoir plus</button>
+            </div>
+            <img src="img/exo_responsive/murray.png" alt="">
+        </section>
+        <section id="gallery" class="flex wrap space-between">
+            <div class="card">
+                <div class="card-content flex column align-items-center">
+                    <img src="img/exo_responsive/07.png" alt="">
+                    <p class="card-number">Carte 1</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-pic">
+                    <img src="img/exo_responsive/01.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-number">Carte 2</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-pic">
+                    <img src="img/exo_responsive/02.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-number">Carte 3</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-pic">
+                    <img src="img/exo_responsive/03.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-number">Carte 4</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-pic">
+                    <img src="img/exo_responsive/04.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-number">Carte 5</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-pic">
+                    <img src="img/exo_responsive/06.png" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-number">Carte 6</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="flex column align-items-center">
+            <div>
+                <p>Vous voulez un ticket pour aller voir le film.</p>          
+                <form class="flex column">
+                    <div class="top-row flex">
+                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="bottom-row flex">
+                        <textarea placeholder="Message"></textarea>
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - <span class="upper">sos autruches fantomes bros</span> | <a href="#">Mentions légales</a></p>
+        <p>📘 🐦 🔗</p>
+    </footer>
+</body>
+</html>
